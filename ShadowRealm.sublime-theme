@@ -1,0 +1,2213 @@
+{
+  "extends": "Default.sublime-theme",
+  "rules": [
+    {
+      "class": "title_bar",
+      "bg": "#1d1f21",
+      "fg": "#d0d2d3",
+      "style": "dark"
+    },
+    {
+      "class": "title_bar",
+      "bg": "#151617"
+    },
+    {
+      "class": "sidebar_container",
+      "content_margin": [
+        0,
+        6,
+        0,
+        0
+      ],
+      "layer0.opacity": 1,
+      "layer0.tint": "#1d1f21"
+    },
+    {
+      "class": "sidebar_container",
+      "layer0.tint": "#151617",
+      "layer1.texture": "Shadow Realm/assets/separator-sidebar.png",
+      "layer1.inner_margin": [
+        0,
+        38,
+        2,
+        1
+      ],
+      "layer1.opacity": 1,
+      "layer1.tint": "#2e3033"
+    },
+    {
+      "class": "sidebar_tree",
+      "indent_top_level": false,
+      "row_padding": [
+        20,
+        5
+      ],
+      "dark_content": false,
+      "spacer_rows": true,
+      "indent_offset": 2,
+      "indent": 8
+    },
+    {
+      "class": "sidebar_heading",
+      "color": "#797c7f",
+      "font.bold": true,
+      "font.size": 11
+    },
+    {
+      "class": "tree_row",
+      "layer0.texture": "Shadow Realm/assets/tree-highlight.png",
+      "layer0.tint": "#4b4e5200",
+      "layer0.inner_margin": [
+        8,
+        4
+      ],
+      "layer0.opacity": 1,
+      "layer1.texture": "Shadow Realm/assets/tree-highlight-border.png",
+      "layer1.tint": "#4b4e5240",
+      "layer1.inner_margin": [
+        8,
+        4
+      ],
+      "layer1.opacity": 0
+    },
+    {
+      "class": "tree_row",
+      "attributes": [
+        "selectable",
+        "hover"
+      ],
+      "layer0.tint": "#4b4e5240",
+      "layer1.opacity": 1
+    },
+    {
+      "class": "tree_row",
+      "attributes": [
+        "selectable",
+        "selected"
+      ],
+      "layer0.tint": "#4b4e5233"
+    },
+    {
+      "class": "tree_row",
+      "attributes": [
+        "selectable",
+        "selected",
+        "hover"
+      ],
+      "layer0.tint": "#4b4e5240"
+    },
+    {
+      "class": "sidebar_label",
+      "fg": "#797c7f",
+      "font.size": 12
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "fg": "#d0d2d3"
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "fg": "#d0d2d3"
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expandable"
+          ]
+        }
+      ],
+      "fg": "#797c7f",
+      "font.bold": false
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expandable"
+          ]
+        }
+      ],
+      "settings": [
+        "bold_folder_labels"
+      ],
+      "font.bold": true
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expandable",
+            "hover"
+          ]
+        }
+      ],
+      "fg": "#d0d2d3"
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded"
+          ]
+        }
+      ],
+      "fg": "#d0d2d3"
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded"
+          ]
+        }
+      ],
+      "settings": [
+        "bold_folder_labels"
+      ],
+      "font.bold": true
+    },
+    {
+      "class": "sidebar_label",
+      "attributes": [
+        "transient"
+      ],
+      "font.italic": false
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "file_system_entry",
+          "attributes": [
+            "ignored"
+          ]
+        }
+      ],
+      "fg": "#797c7f80"
+    },
+    {
+      "class": "disclosure_button_control",
+      "content_margin": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "class": "close_button",
+      "content_margin": [
+        6,
+        8
+      ],
+      "layer0.texture": "Shadow Realm/assets/close.png",
+      "layer0.opacity": 0,
+      "layer0.inner_margin": [
+        0,
+        0
+      ],
+      "layer0.tint": "#797c7f"
+    },
+    {
+      "class": "close_button",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "layer0.opacity": 1
+    },
+    {
+      "class": "close_button",
+      "attributes": [
+        "dirty"
+      ],
+      "layer0.texture": "Shadow Realm/assets/dirty.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "close_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.opacity": 1,
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_folder",
+      "content_margin": [
+        9,
+        9
+      ],
+      "layer0.tint": "#151617",
+      "layer0.opacity": 0,
+      "layer1.texture": "Shadow Realm/assets/folder.png",
+      "layer1.tint": "#797c7fbf",
+      "layer1.opacity": 1,
+      "layer2.texture": "Shadow Realm/assets/folder-open.png",
+      "layer2.tint": "#63b3ed",
+      "layer2.opacity": 0
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded"
+          ]
+        }
+      ],
+      "layer1.opacity": 0,
+      "layer2.opacity": 1
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "layer1.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded",
+            "hover"
+          ]
+        }
+      ],
+      "layer2.texture": {
+        "keyframes": [
+          "Shadow Realm/assets/folder-open-1.png",
+          "Shadow Realm/assets/folder-open-1.png",
+          "Shadow Realm/assets/folder-open-2.png",
+          "Shadow Realm/assets/folder-open-3.png",
+          "Shadow Realm/assets/folder-open-4.png",
+          "Shadow Realm/assets/folder-open-5.png",
+          "Shadow Realm/assets/folder-open-5.png",
+          "Shadow Realm/assets/folder-open-5.png",
+          "Shadow Realm/assets/folder-open-6.png",
+          "Shadow Realm/assets/folder-open-6.png",
+          "Shadow Realm/assets/folder-open-6.png",
+          "Shadow Realm/assets/folder-open-6.png",
+          "Shadow Realm/assets/folder-open.png"
+        ],
+        "loop": false,
+        "frame_time": 0.02
+      },
+      "layer1.opacity": 0,
+      "layer2.opacity": 1
+    },
+    {
+      "class": "icon_folder",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer1.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_folder_loading",
+      "layer1.texture": {
+        "keyframes": [
+          "Shadow Realm/assets/spinner11.png",
+          "Shadow Realm/assets/spinner10.png",
+          "Shadow Realm/assets/spinner9.png",
+          "Shadow Realm/assets/spinner8.png",
+          "Shadow Realm/assets/spinner7.png",
+          "Shadow Realm/assets/spinner6.png",
+          "Shadow Realm/assets/spinner5.png",
+          "Shadow Realm/assets/spinner4.png",
+          "Shadow Realm/assets/spinner3.png",
+          "Shadow Realm/assets/spinner2.png",
+          "Shadow Realm/assets/spinner1.png",
+          "Shadow Realm/assets/spinner.png"
+        ],
+        "loop": true,
+        "frame_time": 0.075
+      },
+      "layer1.tint": "#63b3ed",
+      "layer0.opacity": 0,
+      "content_margin": [
+        8,
+        8
+      ]
+    },
+    {
+      "class": "icon_folder_dup",
+      "content_margin": [
+        9,
+        9
+      ],
+      "layer0.texture": "Shadow Realm/assets/folder.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "layer1.texture": "Shadow Realm/assets/folder-symlink.png",
+      "layer1.tint": "#797c7f",
+      "layer1.opacity": 0.3
+    },
+    {
+      "class": "icon_folder_dup",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_folder_dup",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_file_type",
+      "content_margin": [
+        8,
+        8
+      ]
+    },
+    {
+      "class": "vcs_status_badge",
+      "attributes": [
+        "ignored"
+      ],
+      "layer0.tint": "#797c7f4d"
+    },
+    {
+      "class": "vcs_status_badge",
+      "attributes": [
+        "added"
+      ],
+      "layer0.tint": "#9ae6b466"
+    },
+    {
+      "class": "vcs_status_badge",
+      "attributes": [
+        "modified"
+      ],
+      "layer0.tint": "#63b3ed66"
+    },
+    {
+      "class": "vcs_status_badge",
+      "attributes": [
+        "deleted"
+      ],
+      "layer0.tint": "#fc818166"
+    },
+    {
+      "class": "sheet_contents",
+      "background_modifier": ""
+    },
+    {
+      "class": "sheet_contents",
+      "settings": [
+        "inactive_sheet_dimming"
+      ],
+      "attributes": [
+        "!highlighted"
+      ],
+      "background_modifier": "blend(#151617 0%)"
+    },
+    {
+      "class": "tabset_control",
+      "mouse_wheel_switch": false,
+      "tab_min_width": 50,
+      "tab_overlap": 0,
+      "tab_height": 38,
+      "tab_width": 100,
+      "layer0.tint": "#1d1f21",
+      "layer0.opacity": 1,
+      "content_margin": [
+        10,
+        0
+      ]
+    },
+    {
+      "class": "tabset_control",
+      "tab_overlap": 8,
+      "connector_height": 2,
+      "content_margin": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "layer0.tint": "#151617",
+      "layer1.texture": "Shadow Realm/assets/tabset-border.png",
+      "layer1.tint": "#2e3033",
+      "layer1.inner_margin": [
+        1,
+        1,
+        1,
+        6
+      ],
+      "layer1.opacity": 1
+    },
+    {
+      "class": "tab_connector",
+      "layer0.texture": "",
+      "layer0.opacity": 1,
+      "tint_index": 0
+    },
+    {
+      "class": "tab_control",
+      "layer1.texture": "Shadow Realm/assets/tab.png",
+      "layer1.inner_margin": [
+        9,
+        0,
+        9,
+        0
+      ],
+      "layer1.opacity": 0,
+      "layer2.texture": "Shadow Realm/assets/tab-border.png",
+      "layer2.inner_margin": [
+        9,
+        0,
+        9,
+        0
+      ],
+      "layer2.tint": "#2e3033",
+      "layer2.opacity": 0,
+      "content_margin": [
+        16,
+        5,
+        11,
+        4
+      ],
+      "hit_test_level": 0,
+      "layer0.texture": "",
+      "layer0.opacity": 0,
+      "layer3.opacity": 0
+    },
+    {
+      "class": "tab_control",
+      "attributes": [
+        "selected",
+        "!highlighted"
+      ],
+      "layer1.opacity": 1,
+      "layer1.tint": "#151617",
+      "layer2.opacity": 1
+    },
+    {
+      "class": "tab_control",
+      "attributes": [
+        "selected",
+        "highlighted"
+      ],
+      "layer1.opacity": {
+        "target": 1,
+        "speed": 1,
+        "interpolation": "smoothstep"
+      },
+      "layer1.tint": "#1d1f21",
+      "layer2.opacity": 1
+    },
+    {
+      "class": "tab_control",
+      "attributes": [
+        "hover"
+      ]
+    },
+    {
+      "class": "tab_control",
+      "attributes": [
+        "selected",
+        "hover"
+      ]
+    },
+    {
+      "class": "tab_label",
+      "fg": "#797c7f",
+      "font.italic": false,
+      "font.bold": false,
+      "font.size": 12
+    },
+    {
+      "class": "tab_label",
+      "settings": [
+        "highlight_modified_tabs"
+      ],
+      "font.italic": true,
+      "attributes": [
+        "dirty"
+      ],
+      "fg": "#63b3ed"
+    },
+    {
+      "class": "tab_label",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "selected",
+            "highlighted"
+          ]
+        }
+      ],
+      "fg": "#d0d2d3"
+    },
+    {
+      "class": "tab_label",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "fg": "#d0d2d3"
+    },
+    {
+      "class": "tab_label",
+      "attributes": [
+        "transient"
+      ],
+      "font.italic": true
+    },
+    {
+      "class": "tab_close_button",
+      "content_margin": [
+        0,
+        0
+      ],
+      "layer0.texture": "Shadow Realm/assets/close.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "layer1.texture": "Shadow Realm/assets/dirty.png",
+      "layer1.tint": "#797c7f",
+      "layer1.opacity": 0
+    },
+    {
+      "class": "tab_close_button",
+      "settings": [
+        "show_tab_close_buttons"
+      ],
+      "content_margin": [
+        6,
+        8
+      ]
+    },
+    {
+      "class": "tab_close_button",
+      "settings": [
+        "show_tab_close_buttons"
+      ],
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "tab_close_button",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "dirty"
+          ]
+        }
+      ],
+      "layer0.opacity": 0,
+      "layer1.opacity": 1,
+      "content_margin": [
+        6,
+        8
+      ]
+    },
+    {
+      "class": "tab_close_button",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "dirty"
+          ]
+        }
+      ],
+      "attributes": [
+        "hover"
+      ],
+      "layer0.opacity": 1,
+      "layer1.opacity": 0
+    },
+    {
+      "class": "tab_close_button",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "selected",
+            "dirty"
+          ]
+        }
+      ],
+      "layer0.opacity": 0,
+      "layer1.opacity": 1,
+      "layer1.tint": "#63b3ed"
+    },
+    {
+      "class": "tab_close_button",
+      "parents": [
+        {
+          "class": "tab_control",
+          "attributes": [
+            "selected",
+            "dirty"
+          ]
+        }
+      ],
+      "attributes": [
+        "hover"
+      ],
+      "layer0.opacity": 1,
+      "layer1.opacity": 0
+    },
+    {
+      "class": "scroll_tabs_left_button",
+      "content_margin": [
+        8,
+        10
+      ],
+      "layer0.texture": "Shadow Realm/assets/arrow-left.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "scroll_tabs_left_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "scroll_tabs_right_button",
+      "content_margin": [
+        8,
+        10
+      ],
+      "layer0.texture": "Shadow Realm/assets/arrow-right.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "scroll_tabs_right_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "show_tabs_dropdown_button",
+      "content_margin": [
+        8,
+        8
+      ],
+      "layer0.texture": "Shadow Realm/assets/overflow-menu.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "layer0.inner_margin": [
+        0,
+        0
+      ]
+    },
+    {
+      "class": "show_tabs_dropdown_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "overlay_control",
+      "layer0.texture": "Shadow Realm/assets/overlay-shadow.png",
+      "layer0.inner_margin": [
+        15,
+        35,
+        15,
+        25
+      ],
+      "layer0.opacity": 1,
+      "layer0.tint": "#00000080",
+      "layer1.texture": "Shadow Realm/assets/overlay-border.png",
+      "layer1.inner_margin": [
+        15,
+        35,
+        15,
+        25
+      ],
+      "layer1.opacity": 1,
+      "layer1.tint": "#2e3033",
+      "layer2.texture": "Shadow Realm/assets/overlay-bg.png",
+      "layer2.inner_margin": [
+        15,
+        35,
+        15,
+        25
+      ],
+      "layer2.opacity": 1,
+      "layer2.tint": "#191b1c",
+      "content_margin": [
+        10,
+        35,
+        10,
+        20
+      ]
+    },
+    {
+      "class": "quick_panel",
+      "row_padding": [
+        13,
+        7
+      ],
+      "layer0.tint": "#191b1c",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "quick_panel",
+      "parents": [
+        {
+          "class": "overlay_control"
+        }
+      ],
+      "row_padding": [
+        13,
+        7
+      ],
+      "layer0.tint": "#191b1c",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "mini_quick_panel_row",
+      "layer0.texture": "Shadow Realm/assets/tree-highlight.png",
+      "layer0.tint": "#4b4e5240",
+      "layer0.inner_margin": [
+        8,
+        4
+      ],
+      "layer0.opacity": 0,
+      "layer1.texture": "Shadow Realm/assets/tree-highlight-border.png",
+      "layer1.tint": "#4b4e5240",
+      "layer1.inner_margin": [
+        8,
+        4
+      ],
+      "layer1.opacity": 0
+    },
+    {
+      "class": "mini_quick_panel_row",
+      "attributes": [
+        "selected"
+      ],
+      "layer0.opacity": 1,
+      "layer1.opacity": 1
+    },
+    {
+      "class": "quick_panel_row",
+      "layer0.texture": "Shadow Realm/assets/tree-highlight.png",
+      "layer0.tint": "#4b4e5240",
+      "layer0.inner_margin": [
+        8,
+        4
+      ],
+      "layer0.opacity": 0,
+      "layer1.texture": "Shadow Realm/assets/tree-highlight-border.png",
+      "layer1.tint": "#4b4e5240",
+      "layer1.inner_margin": [
+        8,
+        4
+      ],
+      "layer1.opacity": 0
+    },
+    {
+      "class": "quick_panel_row",
+      "attributes": [
+        "selected"
+      ],
+      "layer0.opacity": 1,
+      "layer1.opacity": 1
+    },
+    {
+      "class": "quick_panel_label",
+      "fg": "#797c7f",
+      "match_fg": "#63b3ed",
+      "selected_fg": "#d0d2d3",
+      "selected_match_fg": "#63b3ed"
+    },
+    {
+      "class": "quick_panel_label",
+      "parents": [
+        {
+          "class": "overlay_control"
+        }
+      ],
+      "fg": "#797c7f",
+      "match_fg": "#63b3ed",
+      "selected_fg": "#d0d2d3",
+      "selected_match_fg": "#63b3ed"
+    },
+    {
+      "class": "quick_panel_path_label",
+      "fg": "#797c7f",
+      "match_fg": "#d0d2d3",
+      "selected_fg": "#797c7f",
+      "selected_match_fg": "#d0d2d3"
+    },
+    {
+      "class": "quick_panel_detail_label",
+      "link_color": "#63b3ed"
+    },
+    {
+      "class": "grid_layout_control",
+      "border_size": 0,
+      "border_color": "#2e3033"
+    },
+    {
+      "class": "grid_layout_control",
+      "border_size": 0
+    },
+    {
+      "class": "minimap_control",
+      "settings": [
+        "always_show_minimap_viewport"
+      ],
+      "viewport_color": "#797c7f",
+      "viewport_opacity": 0.3
+    },
+    {
+      "class": "minimap_control",
+      "settings": [
+        "!always_show_minimap_viewport"
+      ],
+      "viewport_color": "#797c7f",
+      "viewport_opacity": {
+        "target": 0,
+        "speed": 4,
+        "interpolation": "smoothstep"
+      }
+    },
+    {
+      "class": "minimap_control",
+      "attributes": [
+        "hover"
+      ],
+      "settings": [
+        "!always_show_minimap_viewport"
+      ],
+      "viewport_opacity": {
+        "target": 0.3,
+        "speed": 4,
+        "interpolation": "smoothstep"
+      }
+    },
+    {
+      "class": "fold_button_control",
+      "layer0.texture": "Shadow Realm/assets/unfold.png",
+      "layer0.opacity": 1,
+      "layer0.inner_margin": 0,
+      "layer0.tint": "#797c7f",
+      "content_margin": [
+        8,
+        6,
+        8,
+        6
+      ]
+    },
+    {
+      "class": "fold_button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "fold_button_control",
+      "attributes": [
+        "expanded"
+      ],
+      "layer0.texture": "Shadow Realm/assets/fold.png"
+    },
+    {
+      "class": "popup_shadow",
+      "layer0.texture": "Shadow Realm/assets/popup-shadow.png",
+      "layer0.inner_margin": [
+        14,
+        11,
+        14,
+        15
+      ],
+      "layer0.opacity": 1,
+      "layer0.tint": "#00000080",
+      "layer0.draw_center": false,
+      "layer1.texture": "Shadow Realm/assets/popup-border.png",
+      "layer1.inner_margin": [
+        14,
+        11,
+        14,
+        15
+      ],
+      "layer1.opacity": 1,
+      "layer1.tint": "#2e3033",
+      "layer1.draw_center": false,
+      "content_margin": [
+        10,
+        7,
+        10,
+        13
+      ]
+    },
+    {
+      "class": "popup_control",
+      "layer0.texture": "Shadow Realm/assets/popup-bg.png",
+      "layer0.inner_margin": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "layer0.opacity": 1,
+      "layer0.tint": "#191b1c",
+      "content_margin": [
+        0,
+        4
+      ]
+    },
+    {
+      "class": "auto_complete",
+      "row_padding": [
+        5,
+        0
+      ]
+    },
+    {
+      "class": "table_row",
+      "layer0.texture": "Shadow Realm/assets/tree-highlight.png",
+      "layer0.tint": "#4b4e5240",
+      "layer0.inner_margin": [
+        8,
+        4
+      ],
+      "layer0.opacity": 0,
+      "layer1.texture": "Shadow Realm/assets/tree-highlight-border.png",
+      "layer1.tint": "#4b4e5240",
+      "layer1.inner_margin": [
+        8,
+        4
+      ],
+      "layer1.opacity": 0
+    },
+    {
+      "class": "table_row",
+      "attributes": [
+        "selected"
+      ],
+      "layer0.opacity": 1,
+      "layer1.opacity": 1
+    },
+    {
+      "class": "auto_complete_label",
+      "fg": "transparent",
+      "match_fg": "#63b3ed",
+      "selected_fg": "transparent",
+      "selected_match_fg": "#63b3ed",
+      "fg_blend": true
+    },
+    {
+      "class": "auto_complete_hint",
+      "opacity": 0.7,
+      "font.italic": true
+    },
+    {
+      "class": "kind_container",
+      "layer0.texture": "Shadow Realm/assets/kind-bg.png",
+      "layer0.tint": "#191b1c",
+      "layer0.inner_margin": [
+        4,
+        4,
+        7,
+        4
+      ],
+      "layer0.opacity": 0,
+      "layer1.texture": "Shadow Realm/assets/kind-bg.png",
+      "layer1.tint": "#191b1c00",
+      "layer1.inner_margin": [
+        4,
+        4,
+        7,
+        4
+      ],
+      "layer1.opacity": 0.3,
+      "layer2.texture": "Shadow Realm/assets/kind-border.png",
+      "layer2.tint": "#191b1c00",
+      "layer2.inner_margin": [
+        4,
+        4,
+        7,
+        4
+      ],
+      "layer2.opacity": 0.1,
+      "content_margin": [
+        4,
+        0,
+        6,
+        0
+      ]
+    },
+    {
+      "class": "kind_label",
+      "font.size": "1rem",
+      "font.bold": true,
+      "font.italic": true,
+      "color": "#797c7f"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "quick_panel"
+        }
+      ],
+      "font.size": "1.1rem"
+    },
+    {
+      "class": "kind_container kind_function",
+      "layer0.opacity": 1,
+      "layer1.tint": "#f6ad55",
+      "layer2.tint": "#f6ad55"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_function"
+        }
+      ],
+      "color": "#f6ad55"
+    },
+    {
+      "class": "kind_container kind_keyword",
+      "layer0.opacity": 1,
+      "layer1.tint": "#f6ad55",
+      "layer2.tint": "#f6ad55"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_keyword"
+        }
+      ],
+      "color": "#f6ad55"
+    },
+    {
+      "class": "kind_container kind_markup",
+      "layer0.opacity": 1,
+      "layer1.tint": "#4fd1c5",
+      "layer2.tint": "#4fd1c5"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_markup"
+        }
+      ],
+      "color": "#4fd1c5"
+    },
+    {
+      "class": "kind_container kind_namespace",
+      "layer0.opacity": 1,
+      "layer1.tint": "#63b3ed",
+      "layer2.tint": "#63b3ed"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_namespace"
+        }
+      ],
+      "color": "#63b3ed"
+    },
+    {
+      "class": "kind_container kind_navigation",
+      "layer0.opacity": 1,
+      "layer1.tint": "#ecc94b",
+      "layer2.tint": "#ecc94b"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_navigation"
+        }
+      ],
+      "color": "#ecc94b"
+    },
+    {
+      "class": "kind_container kind_snippet",
+      "layer0.opacity": 1,
+      "layer1.tint": "#fc8181",
+      "layer2.tint": "#fc8181"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_snippet"
+        }
+      ],
+      "color": "#fc8181"
+    },
+    {
+      "class": "kind_container kind_type",
+      "layer0.opacity": 1,
+      "layer1.tint": "#63b3ed",
+      "layer2.tint": "#63b3ed"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_type"
+        }
+      ],
+      "color": "#63b3ed"
+    },
+    {
+      "class": "kind_container kind_variable",
+      "layer0.opacity": 1,
+      "layer1.tint": "#797c7f",
+      "layer2.tint": "#797c7f"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_variable"
+        }
+      ],
+      "color": "#797c7f"
+    },
+    {
+      "class": "kind_container kind_color_redish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#fc8181",
+      "layer2.tint": "#fc8181"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_redish"
+        }
+      ],
+      "color": "#fc8181"
+    },
+    {
+      "class": "kind_container kind_color_orangish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#f6ad55",
+      "layer2.tint": "#f6ad55"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_orangish"
+        }
+      ],
+      "color": "#f6ad55"
+    },
+    {
+      "class": "kind_container kind_color_yellowish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#f6ad55",
+      "layer2.tint": "#f6ad55"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_yellowish"
+        }
+      ],
+      "color": "#f6ad55"
+    },
+    {
+      "class": "kind_container kind_color_greenish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#9ae6b4",
+      "layer2.tint": "#9ae6b4"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_greenish"
+        }
+      ],
+      "color": "#9ae6b4"
+    },
+    {
+      "class": "kind_container kind_color_cyanish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#4fd1c5",
+      "layer2.tint": "#4fd1c5"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_cyanish"
+        }
+      ],
+      "color": "#4fd1c5"
+    },
+    {
+      "class": "kind_container kind_color_bluish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#4fd1c5",
+      "layer2.tint": "#4fd1c5"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_bluish"
+        }
+      ],
+      "color": "#4fd1c5"
+    },
+    {
+      "class": "kind_container kind_color_purplish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#b794f4",
+      "layer2.tint": "#b794f4"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_purplish"
+        }
+      ],
+      "color": "#b794f4"
+    },
+    {
+      "class": "kind_container kind_color_pinkish",
+      "layer0.opacity": 1,
+      "layer1.tint": "#f6ad55",
+      "layer2.tint": "#f6ad55"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_pinkish"
+        }
+      ],
+      "color": "#f6ad55"
+    },
+    {
+      "class": "kind_container kind_color_dark",
+      "layer0.opacity": 1,
+      "layer1.tint": "#797c7f",
+      "layer2.tint": "#797c7f"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_dark"
+        }
+      ],
+      "color": "#797c7f"
+    },
+    {
+      "class": "kind_container kind_color_light",
+      "layer0.opacity": 1,
+      "layer1.tint": "white",
+      "layer2.tint": "white"
+    },
+    {
+      "class": "kind_label",
+      "parents": [
+        {
+          "class": "kind_container kind_color_light"
+        }
+      ],
+      "color": "#555"
+    },
+    {
+      "class": "symbol_container",
+      "content_margin": [
+        4,
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "class": "trigger_container",
+      "content_margin": [
+        4,
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "class": "auto_complete_detail_pane",
+      "layer0.opacity": 1,
+      "layer0.tint": "#191b1c",
+      "layer1.opacity": 1,
+      "layer1.tint": "#191b1c",
+      "content_margin": [
+        8,
+        10,
+        8,
+        5
+      ]
+    },
+    {
+      "class": "auto_complete_kind_name_label",
+      "font.size": "0.9rem",
+      "font.italic": true,
+      "border_color": "#797c7f"
+    },
+    {
+      "class": "auto_complete_details",
+      "monospace_background_color": "#191b1c"
+    },
+    {
+      "class": "panel_control",
+      "layer0.tint": "#1d1f21",
+      "layer0.opacity": 1,
+      "content_margin": [
+        0,
+        2
+      ]
+    },
+    {
+      "class": "panel_control",
+      "layer0.tint": "#151617",
+      "layer1.texture": "Shadow Realm/assets/separator-top.png",
+      "layer1.tint": "#2e3033",
+      "layer1.inner_margin": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "layer1.opacity": 1
+    },
+    {
+      "class": "panel_grid_control"
+    },
+    {
+      "class": "panel_close_button",
+      "layer0.texture": "Shadow Realm/assets/close.png",
+      "layer0.opacity": 1,
+      "layer0.tint": "#797c7f",
+      "content_margin": [
+        0,
+        0
+      ]
+    },
+    {
+      "class": "panel_close_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "status_bar",
+      "layer0.texture": "",
+      "layer0.tint": "#1d1f21",
+      "layer0.opacity": 1,
+      "layer1.texture": "Shadow Realm/assets/separator-top.png",
+      "layer1.tint": "#2e3033",
+      "layer1.inner_margin": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "content_margin": [
+        10,
+        1
+      ]
+    },
+    {
+      "class": "status_bar",
+      "layer0.tint": "#151617",
+      "layer1.opacity": 1
+    },
+    {
+      "class": "panel_button_control",
+      "layer0.texture": "Shadow Realm/assets/switch-panel.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "panel_button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "status_container",
+      "content_margin": [
+        0,
+        2
+      ]
+    },
+    {
+      "class": "status_button",
+      "min_size": [
+        100,
+        0
+      ]
+    },
+    {
+      "class": "vcs_branch_icon",
+      "layer0.tint": "#797c7f"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "border_color": "#797c7fb3"
+    },
+    {
+      "class": "dialog",
+      "layer0.tint": "#151617",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "progress_bar_control",
+      "layer0.tint": "#151617",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "progress_gauge_control",
+      "layer0.tint": "#63b3ed",
+      "layer0.opacity": 1,
+      "content_margin": [
+        0,
+        6
+      ]
+    },
+    {
+      "class": "scroll_area_control",
+      "settings": [
+        "overlay_scroll_bars"
+      ],
+      "overlay": true
+    },
+    {
+      "class": "scroll_area_control",
+      "settings": [
+        "!overlay_scroll_bars"
+      ],
+      "overlay": false
+    },
+    {
+      "class": "scroll_bar_control",
+      "layer0.tint": "#151617",
+      "layer0.opacity": 1,
+      "layer1.texture": "Shadow Realm/assets/scrollbar-vertical-wide.png",
+      "layer1.tint": "#797c7f",
+      "layer1.opacity": 0.1,
+      "layer1.inner_margin": [
+        0,
+        10
+      ]
+    },
+    {
+      "class": "scroll_bar_control",
+      "parents": [
+        {
+          "class": "overlay_control"
+        }
+      ],
+      "layer0.tint": "#191b1c"
+    },
+    {
+      "class": "scroll_bar_control",
+      "attributes": [
+        "horizontal"
+      ],
+      "layer1.texture": "Shadow Realm/assets/scrollbar-horizontal-wide.png",
+      "layer1.inner_margin": [
+        10,
+        0
+      ]
+    },
+    {
+      "class": "scroll_bar_control",
+      "settings": [
+        "overlay_scroll_bars"
+      ],
+      "layer0.opacity": 0,
+      "layer1.texture": "Shadow Realm/assets/scrollbar-vertical.png",
+      "layer1.inner_margin": [
+        3,
+        6,
+        3,
+        6
+      ]
+    },
+    {
+      "class": "scroll_bar_control",
+      "settings": [
+        "overlay_scroll_bars",
+        "ui_wide_scrollbars"
+      ],
+      "layer0.texture": "Shadow Realm/assets/scrollbar-vertical-wide.png"
+    },
+    {
+      "class": "scroll_bar_control",
+      "settings": [
+        "overlay_scroll_bars"
+      ],
+      "attributes": [
+        "horizontal"
+      ],
+      "layer0.opacity": 0,
+      "layer1.texture": "Shadow Realm/assets/scrollbar-horizontal.png",
+      "layer1.inner_margin": [
+        6,
+        3,
+        6,
+        3
+      ]
+    },
+    {
+      "class": "scroll_bar_control",
+      "attributes": [
+        "horizontal"
+      ],
+      "settings": [
+        "overlay_scroll_bars",
+        "ui_wide_scrollbars"
+      ],
+      "layer0.texture": "Shadow Realm/assets/scrollbar-horizontal-wide.png"
+    },
+    {
+      "class": "scroll_track_control",
+      "layer0.tint": "#151617",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "scroll_corner_control",
+      "layer0.tint": "#151617",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "puck_control",
+      "layer0.texture": "Shadow Realm/assets/scrollbar-vertical-wide.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 0.3,
+      "layer0.inner_margin": [
+        0,
+        10
+      ],
+      "content_margin": [
+        3,
+        12
+      ]
+    },
+    {
+      "class": "puck_control",
+      "attributes": [
+        "horizontal"
+      ],
+      "layer0.texture": "Shadow Realm/assets/scrollbar-horizontal-wide.png",
+      "layer0.inner_margin": [
+        10,
+        0
+      ],
+      "content_margin": [
+        12,
+        3
+      ]
+    },
+    {
+      "class": "puck_control",
+      "settings": [
+        "overlay_scroll_bars"
+      ],
+      "layer0.texture": "Shadow Realm/assets/scrollbar-vertical.png",
+      "layer0.inner_margin": [
+        3,
+        6,
+        3,
+        6
+      ],
+      "content_margin": [
+        3,
+        20
+      ]
+    },
+    {
+      "class": "puck_control",
+      "settings": [
+        "overlay_scroll_bars",
+        "ui_wide_scrollbars"
+      ],
+      "layer0.texture": "Shadow Realm/assets/scrollbar-vertical-wide.png"
+    },
+    {
+      "class": "puck_control",
+      "settings": [
+        "overlay_scroll_bars"
+      ],
+      "attributes": [
+        "horizontal"
+      ],
+      "layer0.texture": "Shadow Realm/assets/scrollbar-horizontal.png",
+      "layer0.inner_margin": [
+        6,
+        3,
+        6,
+        3
+      ],
+      "content_margin": [
+        20,
+        3
+      ]
+    },
+    {
+      "class": "puck_control",
+      "attributes": [
+        "horizontal"
+      ],
+      "settings": [
+        "overlay_scroll_bars",
+        "ui_wide_scrollbars"
+      ],
+      "layer0.texture": "Shadow Realm/assets/scrollbar-horizontal-wide.png"
+    },
+    {
+      "class": "text_line_control",
+      "layer0.texture": "Shadow Realm/assets/input-bg.png",
+      "layer0.opacity": 1,
+      "layer0.inner_margin": [
+        10,
+        8
+      ],
+      "layer0.tint": "#191b1c",
+      "layer1.texture": "Shadow Realm/assets/input-border.png",
+      "layer1.opacity": 1,
+      "layer1.inner_margin": [
+        10,
+        8
+      ],
+      "layer1.tint": "#2e3033",
+      "content_margin": [
+        8,
+        3,
+        8,
+        3
+      ]
+    },
+    {
+      "class": "text_line_control",
+      "parents": [
+        {
+          "class": "overlay_control"
+        }
+      ],
+      "layer0.texture": "",
+      "layer0.opacity": 0,
+      "color_scheme_tint": "#191b1c",
+      "layer1.texture": "Shadow Realm/assets/input-prompt.png",
+      "layer1.opacity": 1,
+      "layer1.tint": "#797c7f",
+      "layer1.inner_margin": [
+        36,
+        26,
+        0,
+        0
+      ],
+      "content_margin": [
+        38,
+        5,
+        10,
+        5
+      ]
+    },
+    {
+      "class": "text_line_control",
+      "parents": [
+        {
+          "class": "overlay_control goto_file"
+        }
+      ],
+      "layer1.texture": "Shadow Realm/assets/input-search.png"
+    },
+    {
+      "class": "text_line_control",
+      "parents": [
+        {
+          "class": "overlay_control command_palette"
+        }
+      ],
+      "layer1.texture": "Shadow Realm/assets/input-command.png"
+    },
+    {
+      "class": "text_line_control",
+      "parents": [
+        {
+          "class": "overlay_control goto_symbol"
+        }
+      ],
+      "layer1.texture": "Shadow Realm/assets/input-symbol.png"
+    },
+    {
+      "class": "text_line_control",
+      "parents": [
+        {
+          "class": "overlay_control goto_symbol_in_project"
+        }
+      ],
+      "layer1.texture": "Shadow Realm/assets/input-symbol.png"
+    },
+    {
+      "class": "text_line_control",
+      "parents": [
+        {
+          "class": "overlay_control goto_word"
+        }
+      ],
+      "layer1.texture": "Shadow Realm/assets/input-word.png"
+    },
+    {
+      "class": "dropdown_button_control",
+      "content_margin": [
+        8,
+        8
+      ],
+      "layer0.texture": "Shadow Realm/assets/overflow-menu.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1
+    },
+    {
+      "class": "dropdown_button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "button_control",
+      "content_margin": [
+        10,
+        4,
+        10,
+        4
+      ],
+      "min_size": [
+        50,
+        0
+      ],
+      "layer0.tint": "#63b3ed",
+      "layer0.texture": "Shadow Realm/assets/input-bg.png",
+      "layer0.inner_margin": [
+        10,
+        8
+      ],
+      "layer0.opacity": 0
+    },
+    {
+      "class": "button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.opacity": 1
+    },
+    {
+      "class": "icon_button_control",
+      "layer0.tint": [
+        0,
+        0,
+        0
+      ],
+      "layer0.opacity": 0,
+      "layer2.tint": "#d0d2d3",
+      "layer2.opacity": {
+        "target": 0,
+        "speed": 10,
+        "interpolation": "smoothstep"
+      },
+      "content_margin": [
+        2,
+        3
+      ]
+    },
+    {
+      "class": "icon_regex",
+      "layer0.texture": "Shadow Realm/assets/regex.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_regex",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_case",
+      "layer0.texture": "Shadow Realm/assets/matchcase.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_case",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_whole_word",
+      "layer0.texture": "Shadow Realm/assets/word.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_whole_word",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_wrap",
+      "layer0.texture": "Shadow Realm/assets/wrap.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_wrap",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_in_selection",
+      "layer0.texture": "Shadow Realm/assets/inselection.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_in_selection",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_highlight",
+      "layer0.texture": "Shadow Realm/assets/highlight.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_highlight",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_preserve_case",
+      "layer0.texture": "Shadow Realm/assets/replace-preserve-case.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_preserve_case",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_context",
+      "layer0.texture": "Shadow Realm/assets/context.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_context",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_use_buffer",
+      "layer0.texture": "Shadow Realm/assets/buffer.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_use_buffer",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "icon_use_gitignore",
+      "layer0.texture": "Shadow Realm/assets/gitignore.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        11,
+        11
+      ]
+    },
+    {
+      "class": "icon_use_gitignore",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "sidebar_button_control",
+      "layer0.texture": "Shadow Realm/assets/sidebar.png",
+      "layer0.tint": "#797c7f",
+      "layer0.opacity": 1,
+      "content_margin": [
+        8,
+        8
+      ]
+    },
+    {
+      "class": "sidebar_button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "#63b3ed"
+    },
+    {
+      "class": "label_control",
+      "color": "#797c7f",
+      "shadow_color": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "shadow_offset": [
+        0,
+        0
+      ],
+      "font.bold": false,
+      "font.size": 12
+    },
+    {
+      "class": "label_control",
+      "parents": [
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "#797c7f",
+      "font.bold": false,
+      "font.size": 11
+    },
+    {
+      "class": "label_control",
+      "parents": [
+        {
+          "class": "button_control"
+        }
+      ],
+      "color": "#797c7f"
+    },
+    {
+      "class": "label_control",
+      "parents": [
+        {
+          "class": "button_control",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "color": "#3b6d96"
+    },
+    {
+      "class": "title_label_control",
+      "color": "#63b3ed"
+    },
+    {
+      "class": "tool_tip_control",
+      "layer0.tint": "#797c7f",
+      "layer0.inner_margin": [
+        0,
+        0
+      ],
+      "layer0.opacity": 1,
+      "content_margin": [
+        6,
+        3
+      ]
+    },
+    {
+      "class": "tool_tip_label_control",
+      "color": "#151617",
+      "font.size": 12
+    }
+  ]
+}
